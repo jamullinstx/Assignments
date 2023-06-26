@@ -1,7 +1,4 @@
-pollutantmean <- function(directory = "./specdata", pollutant, idlist = 1:332) {
-  # Read ALL of the data into a data frame using the helper fxn
-  pollutionreadings <- readpollutantdatafiles(directory)
-  
+pollutantmean2 <- function(pollutionreadings, pollutant, idlist = 1:332) {
   # Extract the data using the id vector
   subsetreadings <- pollutionreadings[pollutionreadings$ID %in% idlist, ]
   
